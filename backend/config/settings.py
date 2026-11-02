@@ -143,8 +143,8 @@ REST_FRAMEWORK = {
     ),
 }
 CORS_ALLOWED_ORIGINS = [
+    "https://domus-care-project-lilac.vercel.app",
     "http://localhost:3000",
-    "https://domus-care-project-lilac.vercel.app/",
 ]
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
