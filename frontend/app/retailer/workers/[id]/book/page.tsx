@@ -114,19 +114,16 @@ export default function RetailerBookingPage() {
 
     try {
       const booking =
-        await createRetailerBooking(
-          token,
-          {
-            retailer: retailerId,
-            service: Number(service),
-            booking_type: bookingType,
-            booking_date: bookingDate,
-            booking_time: bookingTime,
-            duration,
-            address,
-            instructions,
-          }
-        );
+        await createRetailerBooking(token, {
+  retailer_id: Number(retailerId),
+  service: Number(service),
+  booking_type: bookingType,
+  booking_date: bookingDate,
+  booking_time: bookingTime,
+  duration,
+  address,
+  instructions,
+});
 
 
       setMessage(
