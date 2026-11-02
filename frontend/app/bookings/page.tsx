@@ -312,6 +312,7 @@ const token =
 
 
           <div className="flex items-center gap-3">
+            
             {/* NOTIFICATION */}
                       <NotificationBell />
 
